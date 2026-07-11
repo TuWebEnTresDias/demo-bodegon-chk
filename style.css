@@ -347,9 +347,10 @@ button {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(23, 38, 30, 0.7) 0%,
-        rgba(23, 38, 30, 0.5) 50%,
-        rgba(23, 38, 30, 0.9) 100%
+        rgba(23, 38, 30, 0.75) 0%,
+        rgba(23, 38, 30, 0.65) 40%,
+        rgba(23, 38, 30, 0.7) 60%,
+        rgba(23, 38, 30, 0.92) 100%
     );
 }
 
@@ -369,6 +370,7 @@ button {
     text-transform: uppercase;
     color: var(--dorado);
     margin-bottom: var(--gap-md);
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease forwards 0.2s;
@@ -384,6 +386,7 @@ button {
 .hero__title-line {
     display: block;
     font-size: clamp(3rem, 10vw, 7rem);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.8s ease forwards 0.4s;
@@ -401,6 +404,7 @@ button {
     color: var(--crema-texto);
     max-width: 600px;
     margin: 0 auto var(--gap-lg);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease forwards 0.8s;
@@ -417,27 +421,29 @@ button {
     animation: fadeInUp 0.8s ease forwards 1s;
 }
 
-/* Botones del hero: fondo semitransparente + blur para despegar de la imagen */
+/* Botones del hero: fondo opaco + blur para despegar de la imagen */
 .hero__cta-group .btn {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .hero__cta-group .btn--primary {
-    background-color: rgba(216, 194, 154, 0.92);
+    background-color: var(--dorado);
+    color: var(--verde-botella-oscuro);
 }
 
 .hero__cta-group .btn--primary:hover {
-    background-color: rgba(212, 184, 122, 0.95);
+    background-color: var(--dorado-claro);
 }
 
 .hero__cta-group .btn--secondary {
-    background-color: rgba(250, 247, 239, 0.1);
-    border-color: rgba(250, 247, 239, 0.85);
+    background-color: rgba(250, 247, 239, 0.15);
+    border-color: var(--crema-texto);
+    color: var(--crema-texto);
 }
 
 .hero__cta-group .btn--secondary:hover {
-    background-color: rgba(250, 247, 239, 0.92);
+    background-color: var(--crema-texto);
     color: var(--verde-botella-oscuro);
 }
 
@@ -459,6 +465,7 @@ button {
 .hero__rating-text {
     font-size: 0.875rem;
     color: var(--crema-texto);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero__scroll-indicator {
@@ -959,7 +966,8 @@ button {
 }
 
 .testimonials .section-label {
-    color: var(--dorado);
+    color: var(--verde-botella);
+    letter-spacing: 0.25em;
 }
 
 .testimonials .section-title {
@@ -982,13 +990,13 @@ button {
 }
 
 .testimonials__rating-stars {
-    color: var(--dorado);
+    color: #9a8040;
     font-size: 1.25rem;
 }
 
 .testimonials__rating-text {
     font-size: 0.95rem;
-    color: var(--gris-oscuro);
+    color: var(--verde-botella);
 }
 
 .testimonials__grid {
@@ -1037,8 +1045,8 @@ button {
 
 .testimonial__name {
     display: block;
-    font-weight: 600;
-    color: var(--verde-botella);
+    font-weight: 700;
+    color: var(--verde-botella-oscuro);
 }
 
 .testimonial__date {
@@ -1047,13 +1055,13 @@ button {
 }
 
 .testimonial__stars {
-    color: var(--dorado);
+    color: #9a8040;
     font-size: 1rem;
 }
 
 .testimonial__text {
     font-size: 1rem;
-    color: var(--gris-oscuro);
+    color: var(--negro);
     line-height: 1.7;
     font-style: italic;
 }
