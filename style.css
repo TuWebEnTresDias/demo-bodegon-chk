@@ -348,9 +348,9 @@ button {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(31, 51, 40, 0.7) 0%,
-        rgba(31, 51, 40, 0.5) 50%,
-        rgba(31, 51, 40, 0.9) 100%
+        rgba(23, 38, 30, 0.7) 0%,
+        rgba(23, 38, 30, 0.5) 50%,
+        rgba(23, 38, 30, 0.9) 100%
     );
 }
 
