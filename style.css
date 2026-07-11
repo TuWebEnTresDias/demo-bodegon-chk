@@ -268,7 +268,7 @@ button {
 .header__nav-link--cta {
     padding: 10px 24px;
     background-color: var(--dorado);
-    color: var(--verde-botella);
+    color: var(--verde-botella-oscuro);
     border-radius: var(--radius-sm);
     font-weight: 600;
 }
