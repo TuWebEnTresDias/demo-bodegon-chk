@@ -417,6 +417,30 @@ button {
     animation: fadeInUp 0.8s ease forwards 1s;
 }
 
+/* Botones del hero: fondo semitransparente + blur para despegar de la imagen */
+.hero__cta-group .btn {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.hero__cta-group .btn--primary {
+    background-color: rgba(216, 194, 154, 0.92);
+}
+
+.hero__cta-group .btn--primary:hover {
+    background-color: rgba(212, 184, 122, 0.95);
+}
+
+.hero__cta-group .btn--secondary {
+    background-color: rgba(250, 247, 239, 0.1);
+    border-color: rgba(250, 247, 239, 0.85);
+}
+
+.hero__cta-group .btn--secondary:hover {
+    background-color: rgba(250, 247, 239, 0.92);
+    color: var(--verde-botella-oscuro);
+}
+
 .hero__rating {
     display: flex;
     align-items: center;
@@ -604,7 +628,7 @@ button {
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--crema-texto);
-    border: 1px solid rgba(250, 247, 239, 0.3);
+    border: 1px solid rgba(250, 247, 239, 0.5);
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
     background: transparent;
@@ -612,7 +636,7 @@ button {
 
 .menu__tab:hover {
     color: var(--crema-texto);
-    border-color: rgba(250, 247, 239, 0.6);
+    border-color: rgba(250, 247, 239, 0.8);
 }
 
 .menu__tab--active {
@@ -1227,7 +1251,7 @@ button {
 }
 
 .form__input::placeholder {
-    color: rgba(250, 247, 239, 0.65);
+    color: rgba(250, 247, 239, 0.8);
 }
 
 .form__input:focus {
@@ -1301,7 +1325,7 @@ select.form__input option {
 .contact__info-text--muted {
     color: var(--crema-texto);
     font-style: italic;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .contact__info-link {
@@ -1373,7 +1397,6 @@ select.form__input option {
     font-size: 0.95rem;
     color: var(--crema-texto);
     font-style: italic;
-    opacity: 0.8;
 }
 
 .footer__links-title {
@@ -1390,12 +1413,10 @@ select.form__input option {
     color: var(--crema-texto);
     margin-bottom: 12px;
     transition: color var(--transition-fast);
-    opacity: 0.8;
 }
 
 .footer__link:hover {
     color: var(--dorado);
-    opacity: 1;
 }
 
 .footer__address {
@@ -1403,20 +1424,18 @@ select.form__input option {
     color: var(--crema-texto);
     line-height: 1.6;
     margin-top: var(--gap-sm);
-    opacity: 0.8;
 }
 
 .footer__hours-text {
     font-size: 0.9rem;
     color: var(--crema-texto);
     margin-bottom: 8px;
-    opacity: 0.8;
 }
 
 .footer__hours-text--muted {
     color: var(--crema-texto);
     font-style: italic;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .footer__bottom {
@@ -1428,13 +1447,13 @@ select.form__input option {
 .footer__copyright {
     font-size: 0.8rem;
     color: var(--crema-texto);
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .footer__credit {
     font-size: 0.8rem;
     color: var(--crema-texto);
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .footer__credit a {
@@ -1455,13 +1474,13 @@ select.form__input option {
     right: 30px;
     width: 64px;
     height: 64px;
-    background-color: #25D366;
+    background-color: #1a7a3a;
     color: var(--blanco);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 4px 20px rgba(26, 122, 58, 0.5);
     z-index: 999;
     transition: all var(--transition-medium);
     animation: whatsappPulse 2s ease-in-out infinite;
@@ -1474,15 +1493,15 @@ select.form__input option {
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 6px 30px rgba(26, 122, 58, 0.6);
 }
 
 @keyframes whatsappPulse {
     0%, 100% {
-        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        box-shadow: 0 4px 20px rgba(26, 122, 58, 0.5);
     }
     50% {
-        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+        box-shadow: 0 4px 30px rgba(26, 122, 58, 0.7);
     }
 }
 
@@ -1498,6 +1517,48 @@ select.form__input option {
 .animate-on-scroll.animated {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ============================================
+   FOCUS STATES (Accessibility)
+   ============================================ */
+:focus-visible {
+    outline: 2px solid var(--dorado);
+    outline-offset: 3px;
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--blanco);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(216, 194, 154, 0.3);
+}
+
+.header__nav-link:focus-visible {
+    outline: 2px solid var(--dorado);
+    outline-offset: 6px;
+    border-radius: var(--radius-sm);
+}
+
+.menu__tab:focus-visible {
+    outline: 2px solid var(--dorado);
+    outline-offset: 2px;
+}
+
+.form__input:focus-visible {
+    outline: none;
+    border-color: var(--dorado);
+    box-shadow: 0 0 0 3px rgba(216, 194, 154, 0.25);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 2px solid var(--blanco);
+    outline-offset: 4px;
+}
+
+.footer__link:focus-visible {
+    outline: 2px solid var(--dorado);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
 }
 
 /* ============================================
