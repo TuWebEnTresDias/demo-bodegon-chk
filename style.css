@@ -8,7 +8,7 @@
     --verde-botella: #1F3328;
     --verde-botella-oscuro: #152419;
     --verde-botella-claro: #2a4a38;
-    --crema-texto: #F7F1E3;
+    --crema-texto: #faf7ef;
     --crema-fondo: #F0E9D8;
     --crema-hover: #e6dcc9;
     
@@ -151,7 +151,7 @@ button {
 
 .btn--primary {
     background-color: var(--dorado);
-    color: var(--verde-botella);
+    color: var(--verde-botella-oscuro);
     border-color: var(--dorado);
 }
 
@@ -170,7 +170,7 @@ button {
 
 .btn--secondary:hover {
     background-color: var(--crema-texto);
-    color: var(--verde-botella);
+    color: var(--verde-botella-oscuro);
     transform: translateY(-2px);
 }
 
@@ -399,7 +399,7 @@ button {
 
 .hero__subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: rgba(247, 241, 227, 0.85);
+    color: rgba(235, 229, 216, 0.85);
     max-width: 600px;
     margin: 0 auto var(--gap-lg);
     opacity: 0;
