@@ -150,7 +150,7 @@ button {
 
 .btn--primary {
     background-color: var(--dorado);
-    color: var(--verde-botella-oscuro);
+    color: var(--negro);
     border-color: var(--dorado);
 }
 
@@ -267,7 +267,7 @@ button {
 .header__nav-link--cta {
     padding: 10px 24px;
     background-color: var(--dorado);
-    color: var(--verde-botella-oscuro);
+    color: var(--negro);
     border-radius: var(--radius-sm);
     font-weight: 600;
 }
@@ -278,7 +278,7 @@ button {
 
 .header__nav-link--cta:hover {
     background-color: var(--dorado-claro);
-    color: var(--verde-botella);
+    color: var(--negro);
 }
 
 .header__burger {
@@ -429,7 +429,7 @@ button {
 
 .hero__cta-group .btn--primary {
     background-color: var(--dorado);
-    color: var(--verde-botella-oscuro);
+    color: var(--negro);
 }
 
 .hero__cta-group .btn--primary:hover {
@@ -648,14 +648,14 @@ button {
 
 .menu__tab--active {
     background-color: var(--dorado);
-    color: var(--verde-botella);
+    color: var(--negro);
     border-color: var(--dorado);
 }
 
 .menu__tab--active:hover {
     background-color: var(--dorado-claro);
     border-color: var(--dorado-claro);
-    color: var(--verde-botella);
+    color: var(--negro);
 }
 
 .menu__content {
